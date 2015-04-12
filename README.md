@@ -26,4 +26,5 @@ For Java version you can visit [this](https://github.com/cfliao/2015-mqtt-java-c
 * Publisher
 ![publisher](img/pub.png)
 
-3. The publisher will automatically terminate after send a message to broker. To terminate subscriber and broker server, use `ctrl + C` or `control + C` for times.
+# Note 
+The publisher will automatically terminate after send a message to broker. To terminate subscriber and broker server, use `ctrl + C` or `control + C` for times.
