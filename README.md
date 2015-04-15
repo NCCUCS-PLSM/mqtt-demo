@@ -1,10 +1,12 @@
-# MQTT Python Demo
+# MQTT Demo
 
-This is a Python demostration of MQTT protocol. 
+This is a demostration of MQTT protocol. To give a brief illustration, this README is only about Python version demo. Other language version are the same as Python's version.
 
 For Java version you can visit [this](https://github.com/cfliao/2015-mqtt-java-client) project.
 
 For JavaScript version, please checkout [npm](https://www.npmjs.com/package/mqtt) project.
+
+For Scala version, please checkout [here](https://github.com/prabeesh/MQTTScalaClient).
 
 # Prerequisite
 
@@ -14,7 +16,7 @@ For JavaScript version, please checkout [npm](https://www.npmjs.com/package/mqtt
 	
 * The Mosquitto Python Module 
 	* `pip install paho-mqtt` 
-	* For Java version, you should download Java libraries [org.eclipse.paho.client.mqttv3](https://repo.eclipse.org/content/repositories/paho-releases/org/eclipse/paho/org.eclipse.paho.client.mqttv3/) and [org.eclipse.paho.mqtt.utility](https://repo.eclipse.org/content/repositories/paho-releases/org/eclipse/paho/org.eclipse.paho.mqtt.utility/)
+	* For Java, Scala version, you should download Java libraries [org.eclipse.paho.client.mqttv3](https://repo.eclipse.org/content/repositories/paho-releases/org/eclipse/paho/org.eclipse.paho.client.mqttv3/) and [org.eclipse.paho.mqtt.utility](https://repo.eclipse.org/content/repositories/paho-releases/org/eclipse/paho/org.eclipse.paho.mqtt.utility/)
 
 # Usage
 1. You should first launch an MQTT broker server. With instanlling mosquitto, you can launch a server with purely type `mosquitto`.
