@@ -4,6 +4,8 @@ This is a Python demostration of MQTT protocol.
 
 For Java version you can visit [this](https://github.com/cfliao/2015-mqtt-java-client) project.
 
+For JavaScript version, please checkout [npm](https://www.npmjs.com/package/mqtt) project.
+
 # Prerequisite
 
 * MQTT broker: Mosquitto (yap, an additional 't' there)
