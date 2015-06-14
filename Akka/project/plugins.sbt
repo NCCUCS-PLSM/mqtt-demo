@@ -1,0 +1,8 @@
+addSbtPlugin(ProjectPlugins.updates)
+addSbtPlugin(ProjectPlugins.buildInfo)
+addSbtPlugin(ProjectPlugins.scalastyle)
+addSbtPlugin(ProjectPlugins.stats)
+addSbtPlugin(ProjectPlugins.gitStamp)
+addSbtPlugin(ProjectPlugins.assembly)
+//addSbtPlugin(ProjectPlugins.eclipse)
+//addSbtPlugin(ProjectPlugins.idea)

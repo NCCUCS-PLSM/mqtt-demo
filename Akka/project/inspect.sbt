@@ -1,0 +1,1 @@
+addSbtPlugin(ProjectPlugins.echo)
