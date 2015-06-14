@@ -1,8 +1,8 @@
-Akka MQTT Demo with Camel
+Akka MQTT with Camel
 ==========================
 ##### Build
 ```
-sbt assembly
+./sbt assembly
 ```
 
 ##### Run
