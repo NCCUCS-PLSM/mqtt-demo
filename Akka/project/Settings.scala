@@ -65,8 +65,8 @@ object Settings {
     persistLogLevel := Level.Info,
     ivyLoggingLevel := UpdateLogging.Full,
     resolvers ++= Seq(
-      "PLSM Ivy" at "http://www.plsm.cs.nccu.edu.tw/repository/remote-ivy-repos",
-      Resolver.url("PLSM Maven", url("http://www.plsm.cs.nccu.edu.tw/repository/public"))(Resolver.ivyStylePatterns)
+      "PLSM Maven" at "http://www.plsm.cs.nccu.edu.tw/repository/public",
+      Resolver.url("PLSM Ivy", url("http://www.plsm.cs.nccu.edu.tw/repository/remote-ivy-repos"))(Resolver.ivyStylePatterns)
     ),
     conflictManager := ConflictManager.latestRevision
   )
