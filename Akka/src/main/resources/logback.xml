@@ -1,0 +1,35 @@
+<configuration>
+
+    <conversionRule conversionWord="coloredLevel" converterClass="edu.nccu.plsm.util.ColoredLevel" />
+    <conversionRule conversionWord="simpleThreadName" converterClass="edu.nccu.plsm.util.ThreadNameConverter" />
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>./logs/application.log</file>
+        <encoder>
+            <pattern>%date [%level] from %logger in %simpleThreadName - %message%n%xException</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%simpleThreadName] %-5coloredLevel %logger{15} - %message%n%xException{10}</pattern>
+            <!--pattern>%coloredLevel %logger{15} - %message%n%xException{10}</pattern-->
+        </encoder>
+    </appender>
+
+    <appender name="ASYNCFILE" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="FILE" />
+    </appender>
+
+    <appender name="ASYNCSTDOUT" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="STDOUT" />
+    </appender>
+
+    <logger name="org.apache.camel" level="INFO" />
+
+    <root level="TRACE">
+        <appender-ref ref="ASYNCFILE" />
+        <appender-ref ref="ASYNCSTDOUT" />
+    </root>
+
+</configuration>
